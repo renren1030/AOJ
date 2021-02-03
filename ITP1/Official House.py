@@ -6,8 +6,10 @@ for i in range(n):
     b, f, r, v = map(int, input().split())
     houses[b - 1][f - 1][r - 1] += v
 
-for b in range(4):
-    for f in houses[b]:
-        print('', *f)
-    if b != 3:
-        print('#' * 20)
+for i in range(4):
+    for j in range(3):
+        for k in range(10):
+            print(" {}".format(houses[i][j][k]), end="")
+        print()
+    if i != 3:
+        print("#"*20)
