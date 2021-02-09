@@ -7,5 +7,5 @@ for i in range(N):
     while j >= 0 and A[j] > v:
         A[j+1] = A[j]
         j -= 1
-    A[j+1] = v
+        A[j+1] = v
     print(*A)
